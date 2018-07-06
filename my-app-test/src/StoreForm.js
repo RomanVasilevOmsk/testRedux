@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 import { GetTracks } from './actions/tracks';
+import { Link } from 'react-router';
 
 class StoreForm extends Component {
   // constructor(props){
@@ -54,7 +55,9 @@ class StoreForm extends Component {
        </form>
         <ul >
           {this.props.tracks.map(( tracks, index ) =>
-            <li key={index}>{tracks.name}</li>
+              <li key={index}>
+                <Link to={`/tracks/${tracks.id}`}>{tracks.name}</Link>
+              </li>
           )}
         </ul>
       </div>

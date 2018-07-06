@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import Header from '../src/Header'
 import DropDown from '../src/DropDown';
 import RegistrationForm from '../src/RegistrationForm';
 import StoreForm from '../src/StoreForm';
+
 
 const menu =[
   {
